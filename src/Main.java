@@ -12,6 +12,6 @@ public class Main {
         list.remove(1);
         System.out.println("Размер списка после удаления: " + list.size());
         System.out.println("Элемент по индексу 1 после удаления: " + list.get(1));
-        System.out.println(list.toString());
+        System.out.println("Строковое представление списка: " + list.toString());
     }
 }

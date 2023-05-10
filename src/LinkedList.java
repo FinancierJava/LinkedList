@@ -76,16 +76,18 @@ public class LinkedList {
         return count;
 
     }
+
+    // Возвращает строковое представление списка
     public String toString() {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder(); // Создаем StringBuilder для построения строки
         sb.append("[");
-        Node currentNode = head;
+        Node currentNode = head; // Начинаем с головного узла
         while (currentNode != null) {
-            sb.append(currentNode.data);
+            sb.append(currentNode.data); // Добавляем значение текущего узла в StringBuilder
             if (currentNode.next != null) {
                 sb.append(", ");
             }
-            currentNode = currentNode.next;
+            currentNode = currentNode.next; // Переходим к следующему узлу
         }
         sb.append("]");
         return sb.toString();
